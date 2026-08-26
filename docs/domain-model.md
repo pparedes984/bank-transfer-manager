@@ -98,6 +98,18 @@ Represents employee permissions.
 
 ---
 
+## UserStatus
+Represents the status of the user
+
+### Values
+- ACTIVE
+- BLOCKED
+
+### Responsibilities
+- Control access to the system.
+
+---
+
 ## Account
 Represents a bank account.
 
@@ -267,7 +279,7 @@ Represents a system audit record.
 ### Relationships
 ```text
 AuditLog
-├── 1 Employee
+├── 1 Employee or Customer
 └── 1 Related Entity
 ```
 
