@@ -2,7 +2,7 @@
 
 ## Project Overview
 Bank Transfer Manager is a banking platform designed to manage bank accounts, money transfers, approvals, notifications, and audit records.
-The system enables clients to perform secure transfers while allowing supervisors and administrators to control, review, and audit financial operations.
+The system enables customers to perform secure transfers while allowing bank employees to control, review, and audit financial operations.
 
 ## Problem Statement
 Financial institutions require controls for bank transfers, high-value amount approvals, transaction auditing, 
@@ -16,7 +16,7 @@ and secure user management.
 5. Audit all transactions.
 
 ## Actors
-CLIENT  
+CUSTOMER  
 Can: 
 - Log in 
 - Log out
@@ -38,11 +38,10 @@ Can:
 
 ADMIN  
 Can: 
-- Manage users 
+- Manage employees 
 - Manage transaction limits
-- Block users
-- Unblock users
-- Assign roles
+- Block customers
+- Unblock customers
 - View audit logs
 
 ## Functional Requirements
@@ -62,8 +61,8 @@ The system shall allow clients to review historical transactions.
 The system shall record all user actions for auditing purposes.
 ### FR-008 Notification Management
 The system shall notify users about transfer status changes.
-### FR-009 User Management
-The system shall allow administrators to manage users and roles.
+### FR-009 Employee Management
+The system shall allow administrators to manage employees.
 
 ## High-Level Transfer Flow
 1. Client logs into the system.
@@ -84,7 +83,7 @@ The system shall allow administrators to manage users and roles.
 ### BR-001
 Transfers up to $5,000 are processed automatically.
 ### BR-002
-Transfers above $5,000 require supervisor approval.
+Transfers above $15,000 require supervisor approval.
 ### BR-003
 The source account must have sufficient balance.
 ### BR-004
@@ -99,3 +98,7 @@ A client can own multiple bank accounts.
 The initial account is created by the bank.
 ### BR-009
 Clients can create new investment accounts.
+### BR-010
+Customers must be at least 18 years old to create a bank account.
+### BR-011
+Blocked customers cannot authenticate or perform transfers.
