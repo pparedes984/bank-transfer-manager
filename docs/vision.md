@@ -25,6 +25,7 @@ Can:
 - Manage beneficiaries 
 - View transaction history 
 - Download transaction receipts
+- Create inversion accounts
 
 
 SUPERVISOR  
@@ -32,6 +33,7 @@ Can:
 - Approve transfers 
 - Reject Transfers
 - Review pending transfers
+- Review aproval history
 - view audit history
 
 ADMIN  
@@ -39,6 +41,8 @@ Can:
 - Manage users 
 - Manage transaction limits
 - Block users
+- Unblock users
+- Assign roles
 - View audit logs
 
 ## Functional Requirements
