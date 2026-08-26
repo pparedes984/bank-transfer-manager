@@ -16,29 +16,30 @@ and secure user management.
 5. Audit all transactions.
 
 ## Actors
-CLIENT
-Can:
--Log in
--Log out
--View accounts
--Transfer money
--Manage beneficiaries
--View transaction history
--Download transaction receipts
+CLIENT  
+Can: 
+- Log in 
+- Log out
+- View accounts
+- Transfer money 
+- Manage beneficiaries 
+- View transaction history 
+- Download transaction receipts
 
-SUPERVISOR
-Can:
--Approve transfers
--Reject transfers
--Review pending transfers
--View audit history
 
-ADMIN
-Can:
--Manage users
--Manage transaction limits
--Block users
--View audit logs
+SUPERVISOR  
+Can: 
+- Approve transfers 
+- Reject Transfers
+- Review pending transfers
+- view audit history
+
+ADMIN  
+Can: 
+- Manage users 
+- Manage transaction limits
+- Block users
+- View audit logs
 
 ## Functional Requirements
 ### FR-001 User Authentication
